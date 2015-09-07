@@ -1,4 +1,24 @@
 [package]
 name = "manticore"
 version = "0.1.0"
-authors = ["mwardle <mwardle@robinsage.com>"]
+authors = ["Mark Wardle <mwwardle@gmail.com>", "Dan Scannel <mystik3eb@gmail.com>"]
+
+description = "A cross-platform ui toolkit"
+repository = "https://github.com/mwardle/manticore"
+license = "BSD"
+homepage = "https://github.com/mwardle/manticore"
+documentation = "https://github.com/mwardle/manticore"
+
+readme = "README.md"
+
+keywords = ["GUI", "cross-platform"]
+
+[lib]
+name = "manticore"
+
+[features]
+default = ["manticore-gtk"]
+manticore-gtk = ["gtk"]
+
+[dependencies.gtk]
+optional = true
