@@ -6,9 +6,9 @@ struct GUI<P: Program> {
   program: P,
 }
 
-impl GUI {
-  fn new<P: Program> (_program: P) {
-    GUI {program: program}
+impl GUI<P> {
+  fn new (_program: P) {
+    GUI {program: _program}
   }
 
   fn main(&mut self) {
